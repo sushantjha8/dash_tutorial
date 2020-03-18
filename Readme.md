@@ -66,6 +66,8 @@
         ])
     ])
 #### calling to layout
+
+##### more https://dash.plot.ly/dash-core-components
 app.layout = html.Div(children=[
     html.H4(children='US Agriculture Exports (2011)'),
     generate_table(df)
