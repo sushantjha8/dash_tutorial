@@ -4,7 +4,7 @@
 
 
 ## CallBacks
-        The "inputs" and "outputs" of our application interface are described declaratively through the app.callback decorator.
+       ###  The "inputs" and "outputs" of our application interface are described declaratively through the app.callback decorator.
     In Dash, the inputs and outputs of our application are simply the properties of a particular component
         `### Reactive programming
 
