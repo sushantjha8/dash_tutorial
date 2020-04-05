@@ -286,8 +286,7 @@ def prime_factors(num):
 <p>
 The geometry of annotations can be retrieved by pressing the bottom-right button of the DashCanvas. This button is called "Save" by default; the name can be customized through the goButtonTitle property. This button updates the json_data property of DashCanvas, which is a JSON string with information about the background image and the geometry of annotations.</p>
 
-'''
-        import dash
+import dash
 from dash.exceptions import PreventUpdate
 from dash.dependencies import Input, Output, State
 import dash_html_components as html
@@ -327,5 +326,5 @@ def update_data(string):
 
 if __name__ == '__main__':
     app.run_server(debug=True)
-'''
+
     
