@@ -283,8 +283,8 @@ def prime_factors(num):
 
     # DASH GRAPH
 # Retrieving the geometry of annotations and using utility functions
-<p>
-The geometry of annotations can be retrieved by pressing the bottom-right button of the DashCanvas. This button is called "Save" by default; the name can be customized through the goButtonTitle property. This button updates the json_data property of DashCanvas, which is a JSON string with information about the background image and the geometry of annotations.</p>
+
+The geometry of annotations can be retrieved by pressing the bottom-right button of the DashCanvas. This button is called "Save" by default; the name can be customized through the goButtonTitle property. This button updates the json_data property of DashCanvas, which is a JSON string with information about the background image and the geometry of annotations.
 
 import dash
 from dash.exceptions import PreventUpdate
