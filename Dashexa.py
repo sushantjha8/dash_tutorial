@@ -9,16 +9,20 @@ from dash_canvas.utils import (array_to_data_url, parse_jsonstring,
 from skimage import io, color, img_as_ubyte
 import numpy as np
 
+#create dash app
 app = dash.Dash(__name__)
 filename = 'https://raw.githubusercontent.com/plotly/datasets/master/mitochondria.jpg'
 
 canvas_width = 300
+#read image using io.imread
 img = io.imread(filename, as_gray=True)
 
 app.layout = html.Div([
     html.H6('Annotate the two objects and the background'),
     html.Div([
+      #more https://dash.plotly.com/canvas
     DashCanvas(id='segmentation-canvas',
+               tool='line',
                lineWidth=5,
                filename=filename,
                width=canvas_width,
